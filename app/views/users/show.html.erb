@@ -1,0 +1,13 @@
+<% if flash[:msg] %>
+  <%= flash[:msg] %>
+<% end %>
+
+<h1> <%= @user.name %> </h1>
+
+<!-- <p>Mood: <%= %></p> -->
+<p>Tickets: <%= @user.tickets%></p>
+<p>Height: <%= @user.height %></p>
+
+
+<%= link_to "Edit", edit_user_path(@user) %><br>
+<%= link_to "See attractions", attractions_path%>
